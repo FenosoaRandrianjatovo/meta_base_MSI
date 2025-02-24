@@ -1,0 +1,22 @@
+msa_nm
+MSImagingExperiment with 20000 features and 13961 spectra 
+spectraData(1): intensity
+featureData(1): mz
+pixelData(3): x, y, run
+coord(2): x = 75...474, y = 53...153
+runNames(1): nm
+experimentData(10): spectrumType, instrumentModel, ionSource, ..., scanType, lineScanDirection, pixelSize
+mass range:  119.9138 to 1011.2669 
+centroided: NA 
+> dim(msa_nm)
+[1] 20000 13961
+> dim(msa_pm)
+[1] 20000 13961
+> spectraData(msa_nm)
+SpectraArrays of length 1 
+       names(1):       intensity
+       class(1):      matter_mat
+         dim(1): <20000 x 13961>
+    real mem(1):         0.01 GB
+  shared mem(1):            0 GB
+ virtual mem(1):         2.24 GB
