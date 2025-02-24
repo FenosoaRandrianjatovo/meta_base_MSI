@@ -12,3 +12,6 @@ msa_pm <- readMSIData(path_pm)
 
 spectraData(msa_nm)
 
+ggsave("Image.png", plot = image(msa_pm, i=1978) , width = 20, height = 15, dpi = 300)
+
+
