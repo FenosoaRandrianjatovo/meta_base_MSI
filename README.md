@@ -11,6 +11,10 @@
 
 ![mz for 215](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_ion_image_mz_215.png)
 
+## Principal components analysis 
+
+![PCA](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_pca.png")
+
 
 As reference of code source 
 
