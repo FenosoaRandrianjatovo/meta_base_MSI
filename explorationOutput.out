@@ -20,3 +20,7 @@ SpectraArrays of length 1
     real mem(1):         0.01 GB
   shared mem(1):            0 GB
  virtual mem(1):         2.24 GB
+
+ combined_msa <- gtable_combine(msa_nm, msa_pm)
+Error in align_2(x, y, along = along, join = join) : 
+  Both gtables must have names along dimension to be aligned
