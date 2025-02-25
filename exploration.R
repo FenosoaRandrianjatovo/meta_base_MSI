@@ -17,11 +17,13 @@ path_nm <- "nm.imzML"
 path_pm <-  "pm.imzML"
 msa_nm <- readMSIData(path_nm)
 msa_pm <- readMSIData(path_pm)
-d
+
 
 spectraData(msa_nm)
+
 p <- image(msa_pm, i=11, j=11, zlim=c(0, 1e5), main="Positive Mode")
 p
-ggsave("Image.png", plot = p , width = 20, height = 15, dpi = 300)
+png(file="msa_pm.png", width=480, height=480)
+dev.off()
 
 
