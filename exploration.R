@@ -43,3 +43,35 @@ msa_pm <- process(msa_pm)
 
 
 
+# Combine the datasets: this step requires that both datasets are perfectly aligned
+combined_msa <- combine(msa_nm, msa_pm)
+
+
+# Extract m/z values from both datasets
+mz_nm <- mz(msa_nm)
+mz_pm <- mz(msa_pm)
+
+# Compare m/z values
+identical_mz <- identical(mz_nm, mz_pm)
+if (identical_mz) {
+  cat("The datasets have identical m/z values.\n")
+} else {
+  cat("The datasets have different m/z values.\n")
+}
+
+coords_nm <- coord(msa_nm)
+coords_pm <- coord(msa_pm)
+
+# Compare spatial coordinates
+identical_coords <- identical(coords_nm, coords_pm)
+if (identical_coords) {
+  cat("The datasets have identical spatial coordinates.\n")
+} else {
+      cat("The datasets have different spatial coordinates.\n")
+}
+
+  
+
+
+
+
