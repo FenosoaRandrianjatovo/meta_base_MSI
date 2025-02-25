@@ -21,7 +21,26 @@ msa_pm <- readMSIData(path_pm)
 
 
 featureData(msa_nm)
-image(msa_nm, "run", layout=c(2,4), free="xy", col=dpal("Set1"))
 
-msa_pm
+# Open a PNG device
+png(filename = "msa_nm_plot.png", width = 1000, height = 800, res = 100)
+
+# Generate the plot
+image(msa_nm, "run", layout = c(2, 4), free = "xy", col = dpal("Set1"))
+
+# Close the PNG device
+dev.off()
+
+
+
+summarizePixels(msa_nm, stat=c(TIC="sum"))
+
+# Ion images for m/z 810.36
+png(filename = "msa_nm_ion_image.png", width = 1000, height = 800, res = 100)
+image(msa_nm, mz=810.36,  free="xy",
+    smooth="bilateral", enhance="histogram", scale=TRUE)
+dev.off()
+
+
+
 
