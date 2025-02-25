@@ -16,9 +16,9 @@
 ![PCA](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_pca.png")
 
 
-As reference of code source 
+### Feference of code source 
 
-[ardinalmsi](https://cardinalmsi.org/)
+[Cardinalmsi](https://cardinalmsi.org/)
 
 [Classification](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-classification.html)
 
