@@ -18,6 +18,12 @@ path_pm <-  "pm.imzML"
 msa_nm <- readMSIData(path_nm)
 msa_pm <- readMSIData(path_pm)
 
+featureData(msa_nm)
+plot(msa_nm, i=c(496, 1520))
+
+
+dim(msa_nm)
+dim(msa_pm)
 
 # Normalize intensities
 msa_nm <- normalize(msa_nm, method = "tic")
@@ -40,7 +46,6 @@ msa_pm <- smoothSignal(msa_pm, method = "gaussian", sigma = 2)
 msa_pm <- peakPick(msa_pm, SNR = 6)
 # Process the queued steps
 msa_pm <- process(msa_pm)
-
 
 
 # Combine the datasets: this step requires that both datasets are perfectly aligned
