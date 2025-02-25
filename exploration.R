@@ -48,8 +48,6 @@ msa_pm <- peakPick(msa_pm, SNR = 6)
 msa_pm <- process(msa_pm)
 
 
-# Combine the datasets: this step requires that both datasets are perfectly aligned
-combined_msa <- combine(msa_nm, msa_pm)
 
 
 # Extract m/z values from both datasets
@@ -75,6 +73,10 @@ if (identical_coords) {
       cat("The datasets have different spatial coordinates.\n")
 }
 
+
+
+# Combine the datasets: this step requires that both datasets are perfectly aligned
+combined_msa <- gtable_combine(msa_nm, msa_pm, along=dim(msa_pm)[2], method="average")
   
 
 
