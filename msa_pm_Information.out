@@ -102,3 +102,39 @@ Formal class 'MSImagingExperiment' [package "Cardinal"] with 7 slots
   .. .. .. ..$ run: Factor w/ 1 level "pm": 1 1 1 1 1 1 1 1 1 1 ...
   ..@ processing     : list()
   ..@ metadata       : list()
+
+>pixelData(msa_pm)
+PositionDataFrame with 13961 rows and 3 columns
+                       x         y      run
+               <numeric> <numeric> <factor>
+spectrum=0           473       106       pm
+spectrum=1           398       131       pm
+spectrum=2           106       129       pm
+spectrum=3           400       142       pm
+spectrum=4           269       112       pm
+...                  ...       ...      ...
+spectrum=13956       471       107       pm
+spectrum=13957       421        60       pm
+spectrum=13958       276        65       pm
+spectrum=13959       419        77       pm
+spectrum=13960       105        91       pm
+coord(2): x, y
+run(1): run
+
+
+
+> coord(msa_pm)
+DataFrame with 13961 rows and 2 columns
+                       x         y
+               <numeric> <numeric>
+spectrum=0           473       106
+spectrum=1           398       131
+spectrum=2           106       129
+spectrum=3           400       142
+spectrum=4           269       112
+...                  ...       ...
+spectrum=13956       471       107
+spectrum=13957       421        60
+spectrum=13958       276        65
+spectrum=13959       419        77
+spectrum=13960       105        91
