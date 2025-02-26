@@ -23,4 +23,6 @@ SpectraArrays of length 1
 
  combined_msa <- gtable_combine(msa_nm, msa_pm)
 Error in align_2(x, y, along = along, join = join) : 
-  Both gtables must have names along dimension to be aligned
+  Both gtables must have names along dimension to be aligned''
+
+NB: Mass spectra with shared m/z values fro 4.2MSImagingExperiment
