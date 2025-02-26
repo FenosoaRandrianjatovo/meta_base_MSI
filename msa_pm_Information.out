@@ -1,0 +1,104 @@
+str(msa_pm)  # Check if it contains ROI information
+Formal class 'MSImagingExperiment' [package "Cardinal"] with 7 slots
+  ..@ featureData    :Formal class 'MassDataFrame' [package "Cardinal"] with 7 slots
+  .. .. ..@ keys           :List of 1
+  .. .. .. ..$ mz: chr "mz"
+  .. .. ..@ elementType    : chr "ANY"
+  .. .. ..@ elementMetadata: NULL
+  .. .. ..@ metadata       : list()
+  .. .. ..@ rownames       : NULL
+  .. .. ..@ nrows          : int 20000
+  .. .. ..@ listData       :List of 1
+  .. .. .. ..$ mz: num [1:20000] 79.8 79.9 80 80 80.1 ...
+  ..@ experimentData :Formal class 'ImzMeta' [package "CardinalIO"] with 4 slots
+  .. .. ..@ listData       :List of 15
+  .. .. .. ..$ spectrumType          : Named chr "mass spectrum"
+  .. .. .. .. ..- attr(*, "names")= chr "MS:1000294"
+  .. .. .. ..$ spectrumRepresentation: NULL
+  .. .. .. ..$ contactName           : NULL
+  .. .. .. ..$ contactAffiliation    : NULL
+  .. .. .. ..$ contactEmail          : NULL
+  .. .. .. ..$ instrumentModel       : Named chr "Bruker Daltonics flex series"
+  .. .. .. .. ..- attr(*, "names")= chr "MS:1001534"
+  .. .. .. ..$ ionSource             : Named chr "matrix-assisted laser desorption ionization"
+  .. .. .. .. ..- attr(*, "names")= chr "MS:1000075"
+  .. .. .. ..$ analyzer              : Named chr "time-of-flight"
+  .. .. .. .. ..- attr(*, "names")= chr "MS:1000084"
+  .. .. .. ..$ detectorType          : Named chr "microchannel plate detector"
+  .. .. .. .. ..- attr(*, "names")= chr "MS:1000114"
+  .. .. .. ..$ dataProcessing        : NULL
+  .. .. .. ..$ lineScanSequence      : Named chr "top down"
+  .. .. .. .. ..- attr(*, "names")= chr "IMS:1000401"
+  .. .. .. ..$ scanPattern           : Named chr "meandering"
+  .. .. .. .. ..- attr(*, "names")= chr "IMS:1000410"
+  .. .. .. ..$ scanType              : Named chr "horizontal line scan"
+  .. .. .. .. ..- attr(*, "names")= chr "IMS:1000480"
+  .. .. .. ..$ lineScanDirection     : Named chr "linescan right left"
+  .. .. .. .. ..- attr(*, "names")= chr "IMS:1000490"
+  .. .. .. ..$ pixelSize             : chr "22500"
+  .. .. ..@ elementType    : chr "character_OR_NULL"
+  .. .. ..@ elementMetadata: NULL
+  .. .. ..@ metadata       : list()
+  ..@ centroided     : logi NA
+  ..@ spectraData    :Formal class 'SpectraArrays' [package "Cardinal"] with 3 slots
+  .. .. ..@ data           :Formal class 'SimpleList' [package "S4Vectors"] with 4 slots
+  .. .. .. .. ..@ listData       :List of 1
+  .. .. .. .. .. ..$ intensity:Formal class 'matter_mat' [package "matter"] with 8 slots
+  .. .. .. .. .. .. .. ..@ indexed  : logi TRUE
+  .. .. .. .. .. .. .. ..@ ops      : NULL
+  .. .. .. .. .. .. .. ..@ transpose: logi FALSE
+  .. .. .. .. .. .. .. ..@ data     :Formal class 'atoms' [package "matter"] with 8 slots
+  .. .. .. .. .. .. .. .. .. ..@ refs    : NULL
+  .. .. .. .. .. .. .. .. .. ..@ source  :Formal class 'drle_fct' [package "matter"] with 4 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ levels : chr "/lustre04/scratch/fenosoa/Maya_Project/meta_base_MSI_data/pm.ibd"
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : int 1
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13961
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : int(0) 
+  .. .. .. .. .. .. .. .. .. ..@ type    :Formal class 'drle_fct' [package "matter"] with 4 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ levels : chr [1:10] "char" "uchar" "int16" "uint16" ...
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : int 10
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13961
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : int(0) 
+  .. .. .. .. .. .. .. .. .. ..@ offset  :Formal class 'drle' [package "matter"] with 3 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : num 160016
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13961
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : num 160000
+  .. .. .. .. .. .. .. .. .. ..@ extent  :Formal class 'drle' [package "matter"] with 3 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : num 20000
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13961
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : num(0) 
+  .. .. .. .. .. .. .. .. .. ..@ group   :Formal class 'drle' [package "matter"] with 3 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : int 0
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13961
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : int 1
+  .. .. .. .. .. .. .. .. .. ..@ pointers:Formal class 'drle' [package "matter"] with 3 slots
+  .. .. .. .. .. .. .. .. .. .. .. ..@ values : int 0
+  .. .. .. .. .. .. .. .. .. .. .. ..@ lengths: int 13962
+  .. .. .. .. .. .. .. .. .. .. .. ..@ deltas : int 1
+  .. .. .. .. .. .. .. .. .. ..@ readonly: logi FALSE
+  .. .. .. .. .. .. .. ..@ type     : Factor w/ 6 levels "raw","logical",..: 4
+  .. .. .. .. .. .. .. ..@ dim      : num [1:2] 20000 13961
+  .. .. .. .. .. .. .. ..@ names    : NULL
+  .. .. .. .. .. .. .. ..@ dimnames :List of 2
+  .. .. .. .. .. .. .. .. ..$ : NULL
+  .. .. .. .. .. .. .. .. ..$ : chr [1:13961] "spectrum=0" "spectrum=1" "spectrum=2" "spectrum=3" ...
+  .. .. .. .. ..@ elementType    : chr "ANY"
+  .. .. .. .. ..@ elementMetadata: NULL
+  .. .. .. .. ..@ metadata       : list()
+  .. .. ..@ elementMetadata: NULL
+  .. .. ..@ metadata       : list()
+  ..@ elementMetadata:Formal class 'PositionDataFrame' [package "Cardinal"] with 7 slots
+  .. .. ..@ keys           :List of 2
+  .. .. .. ..$ coord: chr [1:2] "x" "y"
+  .. .. .. ..$ run  : chr "run"
+  .. .. ..@ elementType    : chr "ANY"
+  .. .. ..@ elementMetadata: NULL
+  .. .. ..@ metadata       : list()
+  .. .. ..@ rownames       : chr [1:13961] "spectrum=0" "spectrum=1" "spectrum=2" "spectrum=3" ...
+  .. .. ..@ nrows          : int 13961
+  .. .. ..@ listData       :List of 3
+  .. .. .. ..$ x  : num [1:13961] 473 398 106 400 269 414 115 271 105 103 ...
+  .. .. .. ..$ y  : num [1:13961] 106 131 129 142 112 59 136 72 74 81 ...
+  .. .. .. ..$ run: Factor w/ 1 level "pm": 1 1 1 1 1 1 1 1 1 1 ...
+  ..@ processing     : list()
+  ..@ metadata       : list()
