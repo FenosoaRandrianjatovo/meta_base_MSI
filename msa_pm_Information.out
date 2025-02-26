@@ -1,4 +1,4 @@
-str(msa_pm)  # Check if it contains ROI information
+str(msa_pm)  # Check the  msa_pm  information
 Formal class 'MSImagingExperiment' [package "Cardinal"] with 7 slots
   ..@ featureData    :Formal class 'MassDataFrame' [package "Cardinal"] with 7 slots
   .. .. ..@ keys           :List of 1
