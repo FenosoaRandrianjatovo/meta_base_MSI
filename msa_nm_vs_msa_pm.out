@@ -1,0 +1,22 @@
+> msa_nm
+MSImagingExperiment with 20000 features and 13961 spectra 
+spectraData(1): intensity
+featureData(1): mz
+pixelData(3): x, y, run
+coord(2): x = 75...474, y = 53...153
+runNames(1): nm
+experimentData(10): spectrumType, instrumentModel, ionSource, ..., scanType, lineScanDirection, pixelSize
+mass range:  119.9138 to 1011.2669 
+centroided: NA 
+
+> msa_pm
+MSImagingExperiment with 20000 features and 13961 spectra 
+spectraData(1): intensity
+featureData(1): mz
+pixelData(3): x, y, run
+coord(2): x = 75...474, y = 53...153
+runNames(1): pm
+experimentData(10): spectrumType, instrumentModel, ionSource, ..., scanType, lineScanDirection, pixelSize
+mass range:   79.84147 to 1171.31186 
+centroided: NA 
+
