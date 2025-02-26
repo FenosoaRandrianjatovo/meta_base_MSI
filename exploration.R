@@ -6,7 +6,7 @@ library(grid)
 
 
 # Online Working directory
-# setwd("/home/fenosoa/scratch/Maya_Project/meta_base_MSI_data")
+# setwd("/lustre04/scratch/fenosoa/Maya_Project/meta_base_MSI_data")
 
 # Local wd
 setwd("/Users/fenosoa/Downloads/Maya_Paper_2025/MetaBase_Data/")
