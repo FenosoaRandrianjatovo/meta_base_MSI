@@ -13,7 +13,7 @@
 
 ## Non-negative matrix factorization (NMF)
 
-![NMF]("https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png")
+![NMF](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png)
 
 
 ### Feference of code source 
