@@ -11,6 +11,10 @@
 
 ![NMF fro 10 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_10_pm.png) 
 
+## PCA
+
+
+
 ## Visualization for a random picked m/z
 
 
