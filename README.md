@@ -1,7 +1,10 @@
 # MSI Lipidomic
 
 ##  Segmentation with spatial shrunken centroids (SSC)
- To automatically select  the peaks that distinguish each region, I have used  spatialShrunkenCentroids(), this is the plot.  [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
+ To automatically select  the peaks that distinguish each region, I have used  spatialShrunkenCentroids(), this is the plot.  [Source]
+(https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
+
+- In this case we have tried to segment 8; empty segments are dropped,
 
  
 
