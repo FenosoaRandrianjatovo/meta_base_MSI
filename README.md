@@ -11,9 +11,9 @@
 
 ![mz for 215](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_ion_image_mz_215.png)
 
-## Principal components analysis 
+## Non-negative matrix factorization (NMF)
 
-![PCA](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_pca.png")
+![NMF]("https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png")
 
 
 ### Feference of code source 
