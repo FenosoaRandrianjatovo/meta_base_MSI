@@ -1,5 +1,9 @@
 # MSI Lipidomic
 
+## Plotting the segmentation
+
+![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_pm_ssc_.png)
+
 
 ## Non-negative matrix factorization (NMF)
 
