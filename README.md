@@ -1,6 +1,9 @@
 # MSI Lipidomic
 
-## Plotting the segmentation
+##  Segmentation with spatial shrunken centroids (SSC)
+ To automatically select  the peaks that distinguish each region, I have used  spatialShrunkenCentroids(), this is the plot.  [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
+
+ 
 
 ![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_pm_ssc_.png)
 
