@@ -13,6 +13,8 @@
 
 ## PCA
 
+![PCA for 2 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_pca.png)
+
 
 
 ## Visualization for a random picked m/z
