@@ -1,7 +1,16 @@
 # MSI Lipidomic
 
 
-## Visualization
+## Non-negative matrix factorization (NMF)
+
+![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png)
+
+![NMF fro 5 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_5_pm.png)
+
+![NMF fro 10 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_10_pm.png) 
+
+## Visualization for a random picked m/z
+
 
 
 
@@ -11,11 +20,7 @@
 
 ![mz for 215](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_nm_ion_image_mz_215.png)
 
-## Non-negative matrix factorization (NMF)
 
-![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png)
-
-![NMF fro 5 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_5_pm.png)
 
 
 ### Feference of code source 
