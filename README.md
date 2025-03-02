@@ -1,5 +1,3 @@
-# MSI Lipidomic
-
 # Spatial Analysis of MSI Data Using `spatialShrunkenCentroids()` in Cardinal (R)
 
 This repository demonstrates how to apply spatially-aware clustering using the `spatialShrunkenCentroids()` function from the **Cardinal** package in R for Mass Spectrometry Imaging (MSI) data.
