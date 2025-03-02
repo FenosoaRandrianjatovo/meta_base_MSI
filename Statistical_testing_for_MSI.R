@@ -1,5 +1,5 @@
 # All the Credits goes to Kylie Ariel Bemis and Dan Guo
-
+# https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-testing.html
 library(Cardinal)
 
 setwd("/home/fenosoa/scratch/Maya_Project/meta_base_MSI_data")
