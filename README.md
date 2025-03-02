@@ -42,8 +42,10 @@ msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
                                        s=2^(1:6) #the range of shrinkage parameters
 )
 
-
-
+tiff(filename = "images/msa_pm_peaks_ssc.tiff", width = 15000, height = 12000, res = 3000)
+par(mar = c(4, 4, 2, 1))
+image(msa_pm_peaks_ssc, i = 3:6)
+dev.off()
 ```
 
 [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
