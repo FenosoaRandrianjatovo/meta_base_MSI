@@ -64,6 +64,8 @@ In summary, this figure shows how the same tissue is classified into 8 clusters 
 
 ![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_pm_ssc_.png)
 
+~[shrunkenCentroids](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_pm_shrunkenCentroids.png)
+
 
 ## Non-negative matrix factorization (NMF)
 
