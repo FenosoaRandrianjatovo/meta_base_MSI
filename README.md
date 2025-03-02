@@ -48,9 +48,11 @@ dev.off()
 
 [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
 
+In summary, this figure shows how the same tissue is classified into 8 clusters under different levels of shrinkage. As s increases, the classification “smooths out,” reducing small clusters and merging them into fewer, larger areas.
+
  
 
-- In this case we have tried to segment 8; empty segments are dropped,
+
 
  
 
