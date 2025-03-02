@@ -28,15 +28,21 @@ Make sure that the ```pm.imzML``` and ```pm.ibd``` are in the same directory
 ```r
 msa_pm <- readMSIData("pm.imzML")
 
+#Computes summary statistics for spectral features.
 msa_pm <- summarizeFeatures(msa_pm, c(Mean="mean"))
+
+#Computes total ion count (TIC) for each pixel.
 msa_pm <- summarizePixels(msa_pm, c(TIC="sum"))
 
+#Apply spatially-aware nearest shrunken centroids classification
 msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
-                                       weights="adaptive", 
-                                       r=2, k=8, s=2^(1:6))
-msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
-                                       weights="adaptive", 
-                                       r=2, k=8, s=2^(1:6))
+                                       weights="adaptive", #  adaptive weights for spatial influence.
+                                       r=2, #spatial neighborhood radius.
+                                       k=8, #The number of clusters
+                                       s=2^(1:6) #the range of shrinkage parameters )
+
+
+
 ```
 
 [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
