@@ -1,7 +1,32 @@
 # MSI Lipidomic
 
-##  Segmentation with spatial shrunken centroids (SSC)
- To automatically select  the peaks that distinguish each region, I have used  spatialShrunkenCentroids(), this is the plot.  [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
+# Spatial Analysis of MSI Data Using `spatialShrunkenCentroids()` in Cardinal (R)
+
+This repository demonstrates how to apply spatially-aware clustering using the `spatialShrunkenCentroids()` function from the **Cardinal** package in R for Mass Spectrometry Imaging (MSI) data.
+
+## 📌 Overview
+
+The `spatialShrunkenCentroids()` method performs **spatially-regularized nearest shrunken centroids classification**, which enhances spatial coherence and reduces noise in MSI datasets. 
+
+### ✨ Key Features
+
+- **Incorporates spatial context** to improve classification accuracy.
+- **Adaptive weighting** for neighbor influence during classification.
+- **Shrunken centroids classification** to reduce noise and improve stability.
+- **Supports feature selection** through regularization.
+
+---
+
+## 🛠 Installation
+
+Ensure you have **Cardinal** installed:
+
+```r
+install.packages("Cardinal")
+```
+[Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
+
+ 
 
 - In this case we have tried to segment 8; empty segments are dropped,
 
