@@ -39,7 +39,8 @@ msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
                                        weights="adaptive", #  adaptive weights for spatial influence.
                                        r=2, #spatial neighborhood radius.
                                        k=8, #The number of clusters
-                                       s=2^(1:6) #the range of shrinkage parameters )
+                                       s=2^(1:6) #the range of shrinkage parameters
+)
 
 
 
