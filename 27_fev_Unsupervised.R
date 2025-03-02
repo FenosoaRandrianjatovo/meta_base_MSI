@@ -108,6 +108,10 @@ png(filename = "images/msa_pm_peaks_ssc.png", width = 1000, height = 800, res = 
 image(msa_pm_peaks_ssc, i=3:6)
 dev.off()
 
+png(filename = "images/msa_pm_shrunkenCentroids.png", width = 1000, height = 800, res = 100)
+plot(msa_pm_peaks_ssc, type="centers", linewidth=2)
+dev.off()
+
 
 
 
