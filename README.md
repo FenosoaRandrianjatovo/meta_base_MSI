@@ -50,6 +50,12 @@ dev.off()
 
 In summary, this figure shows how the same tissue is classified into 8 clusters under different levels of shrinkage. As s increases, the classification “smooths out,” reducing small clusters and merging them into fewer, larger areas.
 
+
+### Takeaways
+
+- The choice of s impacts how coarsely or finely the tissue is segmented.
+- If the goal is to detect subtle heterogeneities, smaller shrinkage might be preferable; if the goal is a stable, high-level segmentation, a larger s might be best.
+
  
 
 
