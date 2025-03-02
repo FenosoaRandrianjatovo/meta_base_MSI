@@ -24,6 +24,20 @@ Ensure you have **Cardinal** installed:
 ```r
 install.packages("Cardinal")
 ```
+```r
+msa_pm <- readMSIData("pm.imzML")
+
+msa_pm <- summarizeFeatures(msa_pm, c(Mean="mean"))
+msa_pm <- summarizePixels(msa_pm, c(TIC="sum"))
+
+msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
+                                       weights="adaptive", 
+                                       r=2, k=8, s=2^(1:6))
+msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
+                                       weights="adaptive", 
+                                       r=2, k=8, s=2^(1:6))
+```
+
 [Source](https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-segmentation.html#retrieving-the-top-mz-values)
 
  
