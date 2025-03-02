@@ -24,7 +24,7 @@ Ensure you have **Cardinal** installed:
 ```r
 install.packages("Cardinal")
 ```
-Make sure that the pm.imzML and pm.ibd are in the same directory
+Make sure that the ```pm.imzML``` and ```pm.ibd``` are in the same directory
 ```r
 msa_pm <- readMSIData("pm.imzML")
 
