@@ -66,6 +66,8 @@ In summary, this figure shows how the same tissue is classified into 8 clusters 
 
 ![shrunkenCentroids](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/msa_pm_shrunkenCentroids.png)
 
+NB: It is difficult to tell just from the mean spectra what peaks distinguish each diagnosis.
+
 
 ## Non-negative matrix factorization (NMF)
 
