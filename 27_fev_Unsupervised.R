@@ -19,10 +19,6 @@ msa_nm <- readMSIData(path_nm)
 msa_pm <- readMSIData(path_pm)
 
 
-
-
-
-
 featureData(msa_nm)
 
 # Open a PNG device
