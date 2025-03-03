@@ -41,9 +41,9 @@ image(msa_pm_peaks_80dgmm, free="xy")
 dev.off()
 
 # Each sample is summarized by its mean, and then a linear model is fit to the summaries.
-msa_pm_peaks_mtest <- meansTest(msa_pm_peaks_80dgmm, ~rough_diagnosis, samples=msa_pm_peaks_80dgmm$run)
+# msa_pm_peaks_80_mtest <- meansTest(msa_pm_peaks_80, , samples=msa_pm_peaks_80$run)
 
-msa_pm_peaks_mtest
+# msa_pm_peaks_mtest
 
 
 
