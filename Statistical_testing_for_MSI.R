@@ -1,4 +1,4 @@
-# All the Credits goes to Kylie Ariel Bemis and Dan Guo
+# All  Credits goes to Kylie Ariel Bemis and Dan Guo
 # https://bioconductor.org/packages/release/data/experiment/vignettes/CardinalWorkflows/inst/doc/MSI-testing.html
 library(Cardinal)
 
