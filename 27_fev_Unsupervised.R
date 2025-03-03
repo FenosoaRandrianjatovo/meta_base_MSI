@@ -83,11 +83,11 @@ msa_pm <- summarizePixels(msa_pm, c(TIC="sum"))
 png(filename = "images/summarizePixels_pm.png", width = 1000, height = 800, res = 100)
 image(msa_pm, "TIC")
 dev.off()
-# Do this only in Compute Canada, otherwise if have good resource
+# Do this only in Compute Canada, otherwise if have good resources
 msa_pm_peaks <- msa_pm |>
   normalize(method="tic") |>
   peakProcess(SNR=3, sampleSize=0.1,
-              tolerance=0.5, units="mz")
+  tolerance=0.5, units="mz")
 
 msa_pm_nmf <- NMF(msa_pm_peaks, ncomp=3, niter=30)
 png(filename = "images/NMF_ncomp_3_pm.png", width = 1000, height = 800, res = 100)
