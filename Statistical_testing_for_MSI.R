@@ -34,10 +34,16 @@ msa_pm_peaks_80 <- subsetFeatures(msa_pm_peaks, Variance >= quantile(Variance, 0
 # Segmentation with spatial Dirichlet Gaussian mixture model (DGMM)
 
 set.seed(1)
-msa_pm_peaks_80dgmm <- spatialDGMM(msa_pm_peaks_80, r=1, k=3, groups=msa_pm_peaks_80$run)
+msa_pm_peaks_80dgmm <- spatialDGMM(msa_pm_peaks_80, r=1, k=4, groups=msa_pm_peaks_80$run)
 
-msa_pm_peaks_80dgmm
+png(filename = "images/msa_pm_peaks_80_spatialDGMM_all.png", width = 1000, height = 800, res = 100)
+image(msa_pm_peaks_80dgmm, free="xy")
+dev.off()
 
+# Each sample is summarized by its mean, and then a linear model is fit to the summaries.
+msa_pm_peaks_mtest <- meansTest(msa_pm_peaks_80dgmm, ~rough_diagnosis, samples=msa_pm_peaks_80dgmm$run)
+
+msa_pm_peaks_mtest
 
 
 
