@@ -57,10 +57,12 @@ In summary, this figure shows how the same tissue is classified into 8 clusters 
 - If the goal is to detect subtle heterogeneities, smaller shrinkage might be preferable; if the goal is a stable, high-level segmentation, a larger s might be best.
 
  
-## 📌 Class comparison with means-based testing
+## 📌 Class comparison with means-based testing (Not yet done)
 statistical testing is performed to find peaks differentially abundant among different groups. Since MS imaging produces many hundreds of measurements on the same sample, we can’t treat each mass spectrum as a separate observation. Rather, we need to compare entire samples rather than individual pixels.
 
 The samples must also be provided. Each sample is summarized by its mean, and then a linear model is fit to the summaries. So we will Perform hypothesis testing for imaging experiments by fitting linear mixed models to summarizations or segmentations.
+
+To be continued, I am debuging codes now .....
 
 
 
