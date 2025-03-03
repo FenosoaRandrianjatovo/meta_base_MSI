@@ -57,7 +57,7 @@ In summary, this figure shows how the same tissue is classified into 8 clusters 
 - If the goal is to detect subtle heterogeneities, smaller shrinkage might be preferable; if the goal is a stable, high-level segmentation, a larger s might be best.
 
  
-# Class comparison with means-based testing
+##📌 Class comparison with means-based testing
 statistical testing is performed to find peaks differentially abundant among different groups. Since MS imaging produces many hundreds of measurements on the same sample, we can’t treat each mass spectrum as a separate observation. Rather, we need to compare entire samples rather than individual pixels.
 
 The samples must also be provided. Each sample is summarized by its mean, and then a linear model is fit to the summaries. So we will Perform hypothesis testing for imaging experiments by fitting linear mixed models to summarizations or segmentations.
@@ -74,7 +74,7 @@ The samples must also be provided. Each sample is summarized by its mean, and th
 NB: It is difficult to tell just from the mean spectra what peaks distinguish each spatial Distribution.
 
 
-## Non-negative matrix factorization (NMF)
+## 📌 Non-negative matrix factorization (NMF)
 
 ![NMF fro 3 Components](https://github.com/FenosoaRandrianjatovo/meta_base_MSI/blob/main/images/NMF_ncomp_3_pm.png)
 
