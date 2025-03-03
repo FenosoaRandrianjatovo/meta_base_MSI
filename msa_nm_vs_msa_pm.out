@@ -20,3 +20,52 @@ experimentData(10): spectrumType, instrumentModel, ionSource, ..., scanType, lin
 mass range:   79.84147 to 1171.31186 
 centroided: NA 
 
+# After performing  peak picking on a sample of 10% of all mass spectra to create a set of reference peaks, we only have 126 features.
+
+> msa_pm_peaks
+MSImagingExperiment with 126 features and 13961 spectra 
+spectraData(1): intensity
+featureData(3): mz, count, freq
+pixelData(4): x, y, run, TIC
+coord(2): x = 75...474, y = 53...153
+runNames(1): pm
+metadata(1): processing_20250302184605
+experimentData(11): spectrumType, instrumentModel, ionSource, ..., scanType, lineScanDirection, pixelSize
+mass range: 299.2723 to 848.0235 
+centroided: TRUE 
+
+# Now we keep only the peaks above the top 80% quantile of variance among peaks.
+> msa_pm_peaks_80 <- subsetFeatures(msa_pm_peaks, Variance >= quantile(Variance, 0.8))
+> msa_pm_peaks_80
+MSImagingExperiment with 26 features and 13961 spectra 
+spectraData(1): intensity
+featureData(4): mz, count, freq, Variance
+pixelData(4): x, y, run, TIC
+coord(2): x = 75...474, y = 53...153
+runNames(1): pm
+metadata(1): processing_20250302184605
+experimentData(11): spectrumType, instrumentModel, ionSource, ..., scanType, lineScanDirection, pixelSize
+mass range: 310.8707 to 810.2567 
+centroided: TRUE 
+
+> msa_pm_peaks_80dgmm
+SpatialDGMM on 26 variables and 13961 observations
+names(10): class, mu, sigma, ..., weights, r, k
+coord(2): x = 75...474, y = 53...153
+runNames(1): pm
+modelData(): Spatial Gaussian mixture model (k=4, channels=26)
+
+Groups: pm 
+
+Parameter estimates:
+$mu
+, , 1 
+            1          2          3          4
+pm 828.421884 373.333128 119.523590   9.634443
+, , ... 
+
+$sigma
+, , 1 
+           1         2         3         4
+pm 162.81426  91.27025  45.96339  10.17298
+
