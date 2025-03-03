@@ -31,6 +31,10 @@ msa_pm <- summarizeFeatures(msa_pm, c(Mean="mean"))
 
 #Computes total ion count (TIC) for each pixel.
 msa_pm <- summarizePixels(msa_pm, c(TIC="sum"))
+msa_pm_peaks <- msa_pm |>
+  normalize(method="tic") |>
+  peakProcess(SNR=3, sampleSize=0.1,
+  tolerance=0.5, units="mz")
 
 #Apply spatially-aware nearest shrunken centroids classification
 msa_pm_peaks_ssc <- spatialShrunkenCentroids(msa_pm_peaks,
